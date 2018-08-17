@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:onClick="onMainItemClick"
+    android:id="@+id/book_jia_book_view"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    android:gravity="left"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/book_jia_book_cover"
+        android:layout_width="90dp"
+        android:layout_height="120dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/book_jia_book_title"
+        android:maxLines="1"
+        android:gravity="center"
+        android:textSize="16sp"
+        />
+
+
+</LinearLayout>

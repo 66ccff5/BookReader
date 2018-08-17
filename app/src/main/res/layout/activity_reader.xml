@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reader_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/readerBackgroud"
+    tools:context="com.example.administrator.bookreader.ReaderActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/reader_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="10sp"
+        />
+    </LinearLayout>
+
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/book_content"
+        android:textSize="18sp"
+        android:maxLines="19"
+        android:textScaleX="1.0"
+        android:textColor="@color/readerTextColor"
+        android:lineSpacingMultiplier="1.4"
+        />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+    
+    <TextView
+        android:id="@+id/reader_bottom"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>

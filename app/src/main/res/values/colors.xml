@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="e5e5e5">#00a19d9d</color>
+    <color name="ffffff">#f8dad6d6</color>
+    <color name="readerBackgroud">#FFFBE6</color>
+    <color name="readerTextColor">#42413A</color>
+    <color name="readerBackgroudBlack">#313531</color>
+    <color name="readerTextColorBlack">#949694</color>
+</resources>

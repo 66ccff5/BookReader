@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#00FFFFFF"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="#00FFFFFF"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="#5795d4"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <ImageView
+            android:id="@+id/back_to_book"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:src="@drawable/actionbar_back"
+            />
+
+        <TextView
+            android:id="@+id/pop_book_title"
+            android:layout_marginRight="35dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="19sp"
+            />
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/pop_content_zj"
+            android:background="#00FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            ></LinearLayout>
+
+
+        <LinearLayout
+            android:background="#ffffff"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+            <LinearLayout
+                android:id="@+id/pop_mulu"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textColor="#5795d4"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:text="目录"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/shape_corner"
+                android:id="@+id/pop_baitian_heiye"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:id="@+id/text_baitian_heiye"
+                    android:text="白天"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/pop_shezhi"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="#fdf43b"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:text="设置"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
