@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:label=""
             android:launchMode="singleTask">
             <intent-filter>
@@ -23,15 +23,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SearchActivity"
+            android:name=".activity.SearchActivity"
             android:launchMode="singleTask" />
         <activity
-            android:name=".BookActivity"
+            android:name=".activity.BookActivity"
             android:launchMode="singleTask" />
-        <activity android:name=".ReaderActivity" />
+        <activity android:name=".activity.ReaderActivity" />
 
         <service
-            android:name=".ChapterLoadService"
+            android:name=".service.ChapterLoadService"
             android:enabled="true"
             android:exported="true"></service>
     </application>

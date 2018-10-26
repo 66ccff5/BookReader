@@ -1,6 +1,10 @@
-package com.example.administrator.bookreader;
+package com.example.administrator.bookreader.other;
 
 import android.os.AsyncTask;
+
+import com.example.administrator.bookreader.activity.ReaderActivity;
+import com.example.administrator.bookreader.adapter.ChapterListAdapter;
+import com.example.administrator.bookreader.bean.Chapter;
 
 import org.json.JSONArray;
 import org.json.JSONException;

@@ -1,9 +1,11 @@
-package com.example.administrator.bookreader;
+package com.example.administrator.bookreader.service;
 
 import android.app.Service;
 import android.content.Intent;
 import android.os.Binder;
 import android.os.IBinder;
+
+import com.example.administrator.bookreader.other.ChapterLoadTask;
 
 public class ChapterLoadService extends Service {
     public ChapterLoadService() {

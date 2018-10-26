@@ -7,7 +7,7 @@
     android:divider="@drawable/mine_own_item_devide"
     android:showDividers="middle"
     android:layout_height="match_parent"
-    tools:context="com.example.administrator.bookreader.BookActivity">
+    tools:context="com.example.administrator.bookreader.activity.BookActivity">
 
     <LinearLayout
         android:orientation="vertical"

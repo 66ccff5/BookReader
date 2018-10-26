@@ -1,4 +1,4 @@
-package com.example.administrator.bookreader;
+package com.example.administrator.bookreader.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -11,6 +11,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.example.administrator.bookreader.bean.NetBook;
+import com.example.administrator.bookreader.R;
 
 import java.util.List;
 

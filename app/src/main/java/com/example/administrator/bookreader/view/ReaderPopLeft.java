@@ -1,4 +1,4 @@
-package com.example.administrator.bookreader;
+package com.example.administrator.bookreader.view;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -10,9 +10,13 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
+
+import com.example.administrator.bookreader.R;
+import com.example.administrator.bookreader.activity.ReaderActivity;
+import com.example.administrator.bookreader.adapter.BookAdapter;
+import com.example.administrator.bookreader.adapter.ChapterListAdapter;
 
 /**
  * Created by Administrator on 2018/7/2 0002.

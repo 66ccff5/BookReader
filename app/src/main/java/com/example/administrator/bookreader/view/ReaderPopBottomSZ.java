@@ -1,4 +1,4 @@
-package com.example.administrator.bookreader;
+package com.example.administrator.bookreader.view;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -12,6 +12,8 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.PopupWindow;
 import android.widget.TextView;
+
+import com.example.administrator.bookreader.R;
 
 /**
  * Created by Administrator on 2018/7/15 0015.

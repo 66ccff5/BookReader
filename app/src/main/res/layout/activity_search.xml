@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context="com.example.administrator.bookreader.SearchActivity">
+    tools:context="com.example.administrator.bookreader.activity.SearchActivity">
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"

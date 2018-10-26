@@ -1,4 +1,4 @@
-package com.example.administrator.bookreader;
+package com.example.administrator.bookreader.activity;
 
 import android.content.Intent;
 import android.support.v7.app.ActionBar;
@@ -8,12 +8,13 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.Toolbar;
 
 import com.bumptech.glide.Glide;
+import com.example.administrator.bookreader.bean.NetBook;
+import com.example.administrator.bookreader.R;
+import com.example.administrator.bookreader.adapter.BookAdapter;
 import com.ms.square.android.expandabletextview.ExpandableTextView;
 
-import org.litepal.LitePal;
 import org.litepal.crud.DataSupport;
 
 import java.util.List;

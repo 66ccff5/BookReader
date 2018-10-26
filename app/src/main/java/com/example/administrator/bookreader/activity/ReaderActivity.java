@@ -1,12 +1,8 @@
-package com.example.administrator.bookreader;
+package com.example.administrator.bookreader.activity;
 
-import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.app.Dialog;
-import android.app.DownloadManager;
 import android.content.ComponentName;
 import android.content.Context;
-import android.content.Intent;
 import android.content.ServiceConnection;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -18,14 +14,12 @@ import android.os.Message;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -34,6 +28,17 @@ import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.administrator.bookreader.bean.Chapter;
+import com.example.administrator.bookreader.service.ChapterLoadService;
+import com.example.administrator.bookreader.other.ChapterLoadTask;
+import com.example.administrator.bookreader.bean.NetBook;
+import com.example.administrator.bookreader.R;
+import com.example.administrator.bookreader.view.ReaderPop;
+import com.example.administrator.bookreader.view.ReaderPopBottomSZ;
+import com.example.administrator.bookreader.view.ReaderPopLeft;
+import com.example.administrator.bookreader.adapter.BookAdapter;
+import com.example.administrator.bookreader.adapter.ChapterListAdapter;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -47,7 +52,6 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -389,60 +393,7 @@ public class ReaderActivity extends AppCompatActivity {
         }
     }
 
-//    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
-//    private void showPopupWindowTop(View view,PopupWindow window) {
-//
-//
-//        window.showAtLocation(view, Gravity.TOP, 0, 0);
-//
-//        new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//
-//                while(alpha>0.5f){
-//                    try {
-//                        //4是根据弹出动画时间和减少的透明度计算
-//                        Thread.sleep(8);
-//                    } catch (Exception e) {
-//                        e.printStackTrace();
-//                    }
-//                    Message msg =mhandler.obtainMessage();
-//                    msg.what = 1;
-//                    //每次减少0.01，精度越高，变暗的效果越流畅
-//                    alpha-=0.01f;
-//                    msg.obj =alpha ;
-//                    mhandler.sendMessage(msg);
-//
-//                }
-//            }
-//        }).start();
-//        window.setOnDismissListener(new PopupWindow.OnDismissListener() {
-//            @Override
-//            public void onDismiss() {
-//                //popupwindow消失的时候恢复成原来的透明度
-//                new Thread(new Runnable() {
-//                    @Override
-//                    public void run() {
-//                        //此处while的条件alpha不能<= 否则会出现黑屏
-//                        while(alpha<1f){
-//                            try {
-//                                Thread.sleep(4);
-//                            } catch (Exception e) {
-//                                e.printStackTrace();
-//                            }
-//                            Log.d("headportrait","alpha:"+alpha);
-//                            Message msg =mhandler.obtainMessage();
-//                            msg.what = 1;
-//                            alpha+=0.01f;
-//                            msg.obj =alpha ;
-//                            mhandler.sendMessage(msg);
-//                        }
-//                    }
-//                }).start();
-//            }
-//
-//        });
-//    }
+
 
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
