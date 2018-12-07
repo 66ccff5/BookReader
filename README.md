@@ -63,13 +63,13 @@ notifyDataSetChanged方法通知书架recyclerview进行更新，再次阅读时
 
 使用开源框架：
 ---
-1.ExpandableTextView
-2.Glide
-3.Okhttp
-4.RecyclerView
+1.ExpandableTextView<br>
+2.Glide<br>
+3.Okhttp<br>
+4.RecyclerView<br>
 
 使用设计模式：
 ---
-1.单例模式
-2.适配器模式
+1.单例模式<br>
+2.适配器模式<br>
 
